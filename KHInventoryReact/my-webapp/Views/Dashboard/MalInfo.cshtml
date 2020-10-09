@@ -1,0 +1,27 @@
+﻿@using SignalRMVCChat.DependencyInjection
+@using SignalRMVCChat.Service
+@model dynamic
+
+
+@{
+    ViewBag.Title = "اطلاعات دامداران";
+    Layout = "../Shared/_Layout.cshtml";
+
+}
+@await  Html.PartialAsync("MalInfoList")
+
+
+
+
+<div id="modalPlace"></div>
+
+@section scripts
+{
+    <input id="modalName" type="hidden" value="modalPlace"/>
+    <input id="formAction" type="hidden" value="/Malinfo/Save"/>
+    <input id="deleteAction" type="hidden" value="/Malinfo/delete"/>
+    <input id="cellEditingAction" type="hidden" value="/Malinfo/ChangeColumn"/>
+    <input id="formMethod" type="hidden" value="/Ma    linfo/Save"/>
+     <script src="/assets/mysharedjs/exportExcel.js"></script>
+ <script src="/assets/mysharedjs/ExcelLikeTableEditing.js"></script>
+}

@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <base href="%PUBLIC_URL%/"/>
+  <!--
+    manifest.json provides metadata used when your web app is added to the
+    homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+  -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+
+  <script data-pace-options='{ "ajax": true ,"restartOnRequestAfter":true}' src="%PUBLIC_URL%/assets/pace.js"></script>
+  <script>
+    paceOptions = {
+      catchupTime: 100,
+      initialRate: .03,
+      minTime: 250,
+      ghostTime: 100,
+      maxProgressPerFrame: 20,
+      easeFactor: 1.25,
+      startOnPageLoad: true,
+      restartOnPushState: true,
+      restartOnRequestAfter: 500,
+      target: 'body',
+      elements: {
+        checkInterval: 100,
+        selectors: ['body']
+      },
+      eventLag: {
+        minSamples: 10,
+        sampleCount: 3,
+        lagThreshold: 3
+      },
+      ajax: {
+        trackMethods: ['GET', 'POST', 'get', 'post'],
+        trackWebSockets: true,
+        ignoreURLs: []
+      }
+    }
+
+  </script>
+  <!--
+    Notice the use of %PUBLIC_URL% in the tags above.
+    It will be replaced with the URL of the `public` folder during the build.
+    Only files inside the `public` folder can be referenced from the HTML.
+
+    Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+    work correctly both with client-side routing and a non-root public URL.
+    Learn how to configure a non-root public URL by running `npm run build`.
+  -->
+
+  <style>
+    table * {
+      direction: rtl !important;
+    }
+
+    th {
+      text-align: center !important;
+    }
+
+    td {
+      text-align: center !important;
+
+    }
+
+
+    .pace {
+      -webkit-pointer-events: none;
+      pointer-events: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    .pace-inactive {
+      display: none;
+    }
+
+    .pace .pace-progress {
+      background: #29d;
+      position: fixed;
+      z-index: 2000;
+      top: 0;
+      right: 100%;
+      width: 100%;
+      height: 2px;
+    }
+
+    .pace .pace-progress-inner {
+      display: block;
+      position: absolute;
+      right: 0px;
+      width: 100px;
+      height: 100%;
+      box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+      opacity: 1.0;
+      -webkit-transform: rotate(3deg) translate(0px, -4px);
+      -moz-transform: rotate(3deg) translate(0px, -4px);
+      -ms-transform: rotate(3deg) translate(0px, -4px);
+      -o-transform: rotate(3deg) translate(0px, -4px);
+      transform: rotate(3deg) translate(0px, -4px);
+    }
+
+    .pace .pace-activity {
+      display: block;
+      position: fixed;
+      z-index: 2000;
+      top: 15px;
+      right: 15px;
+      width: 14px;
+      height: 14px;
+      border: solid 2px transparent;
+      border-top-color: #29d;
+      border-left-color: #29d;
+      border-radius: 10px;
+      -webkit-animation: pace-spinner 400ms linear infinite;
+      -moz-animation: pace-spinner 400ms linear infinite;
+      -ms-animation: pace-spinner 400ms linear infinite;
+      -o-animation: pace-spinner 400ms linear infinite;
+      animation: pace-spinner 400ms linear infinite;
+    }
+
+    @-webkit-keyframes pace-spinner {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @-moz-keyframes pace-spinner {
+      0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @-o-keyframes pace-spinner {
+      0% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @-ms-keyframes pace-spinner {
+      0% {
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes pace-spinner {
+      0% {
+        transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    #disableBackground h2{
+      color: #3eb1ff;
+      margin:20%; 
+      z-index: 99999;
+    }
+    #disableBackground {
+      position: fixed;
+      opacity: 0.3;
+      width: 100%;
+      top:50px;
+      height: 100%;
+      background-color: #0edbf9;
+      z-index: 9999;
+    }
+
+  </style>
+  <title>انبارداری نمایندگی شرکت تامین نیاز دامداران خسروشاه و حومه</title>
+</head>
+<body class="A5 landscape ">
+
+
+<div style="position: relative" id="disableBackgroundholder">
+
+</div>
+<div id="loading2" class="pace-running pace-running">
+  <div class="pace pace-active">
+    <div class="pace-progress" data-progress-text="0%" data-progress="00" style="transform: translate3d(0%, 0px, 0px);">
+      <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+  </div>
+</div>
+
+<noscript>
+  You need to enable JavaScript to run this app.
+</noscript>
+<div id="root"></div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+
+<script>
+
+  const constantMock = window.fetch;
+  window.fetch = function () {
+    console.log(arguments);
+
+    Pace.start();
+    document.getElementById('disableBackgroundholder').innerHTML = '<div id="disableBackground"><h2  style=" text-align: center">در حال خواندن اطلاعات</h2></div>';
+    document.getElementById('loading2').style.display = 'block';
+    
+    
+    return new Promise((resolve, reject) => {
+      constantMock.apply(this, arguments)
+              .then((res) => {
+                document.getElementById('disableBackgroundholder').innerHTML = '';
+
+                document.getElementById('loading2').style.display = 'none';
+
+                resolve(res);
+              })
+              .catch((error) => {
+                reject(error);
+                document.getElementById('loading').css.display = 'none';
+                document.getElementById('disableBackgroundholder').innerHTML = '';
+              })
+    });
+  }
+</script>
+</body>
+</html>

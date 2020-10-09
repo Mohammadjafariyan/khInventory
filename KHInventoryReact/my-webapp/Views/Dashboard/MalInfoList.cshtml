@@ -1,0 +1,57 @@
+﻿@using SignalRMVCChat.Service
+@model object
+@inject MalInfoService  distributionService
+
+@{
+    var malinfos = distributionService.GetQuery().OrderByDescending(o=>o.Id).ToList()    ;
+
+}
+   
+                        @if (malinfos.Count > 0)
+                    {
+                        <table class="table table-bordered " id="mytable">
+                            <thead>
+                            <tr>
+
+                                <th id="i">ردیف </th>
+                                <th style="display: none    " id="Id">کد</th>
+                                <th id="NameDamdar">نام دامدار</th>
+                                <th id="Rusta" >روستا</th>
+                                <th id="TotalMal">	تعداد کل دام</th>
+                                <th id="TotalCow">تعداد گاو-راس</th>
+                                <th id="TotalGowMish">تعدادگاومیش-راس</th>
+                                <th id="Marhale1">مرحله </th>
+                                <th id="Marhale2">مرحله 2</th>
+                                <th  id="PKFrom">پلاک گاو از-</th>
+                                <th id="PKTo">پلاک گاومیش -تا</th>
+                            </tr>
+                            
+                            </thead>
+                            <tbody>
+                            @{
+                                                                int i = 0;
+                                                            }
+                            @foreach (var itm in malinfos)
+                            {
+                                i++;
+                                <tr>
+                                    <td id="i">@i</td>
+                                     <td style="display: none    " id="Id">@itm.Id</td>
+                                    <td id="NameDamdar">@itm.NameDamdar</td>
+                                    <td id="Rusta" >@itm.Rusta</td>
+                                    <td id="TotalMal">@itm.TotalMal</td>
+                                    <td id="TotalCow">@itm.TotalCow</td>
+                                    <td id="TotalGowMish">@itm.TotalGowMish</td>
+                                    <td id="Marhale1">@itm.Marhale1</td>
+                                    <td id="Marhale2">@itm.Marhale2</td>
+                                    <td id="PKFrom">@itm.PKFrom</td>
+                                    <td id="PKTo">@itm.PKTo</td>
+                                </tr>
+
+                                
+                            }
+
+                            </tbody>
+                        </table>
+                    }
+                    
