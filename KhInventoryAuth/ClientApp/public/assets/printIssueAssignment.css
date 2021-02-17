@@ -1,0 +1,23 @@
+﻿
+
+
+body{
+}
+.navbar-expand-sm,.mynav,nav{
+    display: none;
+}
+
+
+.thRight{
+    text-align: right !important;
+}   
+
+table * {
+}
+
+.table-bordered th, .table-bordered td{
+    border: 1px solid black !important;
+}
+
+
+@page { size: A5 landscape  }

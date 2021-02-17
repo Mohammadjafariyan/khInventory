@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a01d9af2-e8ee-4720-bdd0-4bc6326df259" name="somee" url="http://mohammad-jafariyan-blog.somee.com">
+        <fileTransfer rootFolder="/www.mohammad-jafariyan-blog.somee.com" host="mohammad-jafariyan-blog.somee.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

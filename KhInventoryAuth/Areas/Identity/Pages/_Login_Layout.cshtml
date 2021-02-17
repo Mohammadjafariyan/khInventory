@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <script data-pace-options='{ "ajax": true ,"restartOnRequestAfter":true}'
+            src="/assets/pace.js" ></script>
+
+        <script>
+          paceOptions = {
+            catchupTime: 100,
+            initialRate: .03,
+            minTime: 250,
+            ghostTime: 100,
+            maxProgressPerFrame: 20,
+            easeFactor: 1.25,
+            startOnPageLoad:true,
+            restartOnPushState:true,
+            restartOnRequestAfter: 500,
+            target:'body',
+            elements: {
+              checkInterval: 100,
+              selectors: ['body']
+            },
+            eventLag: {
+              minSamples: 10,
+              sampleCount: 3,
+              lagThreshold: 3
+            },
+            ajax: {
+              trackMethods: ['GET','POST','get','post'],
+              trackWebSockets:true,
+              ignoreURLs: []
+            }
+          }
+    
+        </script>
+
+    
+    <link href="/assets/pace.css"/>
+    <link rel="stylesheet" href="/assets/bootstrap.css"  >
+
+    <script
+        src="/assets/jquery.js"></script>
+    @*<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>*@
+    <script src="/assets/proper.js"  ></script>
+    <script src="/assets/bootstrap.js"  ></script>
+
+</head>
+<body>
+
+<div class="container" style="text-align: center">
+    <!-- Page-header start -->
+    <!-- Page-header end -->
+
+    <!-- Page body start -->
+    <div class="page-body">
+        <div class="row">
+            <div class="col-lg-12">
+
+                @*@Html.Partial("SendSMSPartial")*@
+
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5>@ViewBag.Title</h5>
+                        <a style="float: right" href="/"> سیستم مدیریت انبار تعاونی خسروشاه</a>
+                    </div>
+                    <div class="card-block">
+
+                      
+                        <hr/>
+
+                        @RenderBody()
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@RenderSection("scripts", required: false)
+
+</body>
+</html>

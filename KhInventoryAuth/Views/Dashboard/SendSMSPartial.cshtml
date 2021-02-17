@@ -1,0 +1,29 @@
+﻿@model dynamic
+
+@{
+    Layout = null;
+}
+
+
+ <div class="card">
+                    <div class="card-header">
+                        <h5>ارسال پیامک</h5>
+                    </div>
+ <div class="card-block"     >
+ 
+     <form action="/Customer/Dashboard/SendSMS">
+         
+         <label>متن پیامک :</label>
+         <textarea name="pattern" class="form-control" rows="5" cols="50">
+سلام آقای %personName
+سهمیه سبوس این ماه شما آماده دریافت است
+نمایندگی تعاونی کشاوزی و صنعت دام خسروشاه و حومه
+
+</textarea>
+         
+         <button type="submit" class="btn btn-primary">ارسال</button>
+         
+     </form>
+     
+ </div>
+ </div>

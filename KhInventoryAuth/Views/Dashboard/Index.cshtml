@@ -1,0 +1,23 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "لیست توزیع سبوس تعاونی کشاورزی و صنعت دام خسروشاه و حومه- سهمیه سبوس";
+    Layout = "../Shared/_Layout.cshtml";
+
+    
+}
+
+@await  Html.PartialAsync("DistributionList")
+<div id="modalPlace"></div>
+
+@section scripts
+{
+    <input id="modalName" type="hidden" value="modalPlace"/>
+    <input id="formAction" type="hidden" value="/Distrib/Save"/>
+    <input id="deleteAction" type="hidden" value="/Distrib/delete"/>
+    <input id="cellEditingAction" type="hidden" value="/Distrib/ChangeColumn"/>
+    <input id="formMethod" type="hidden" value="/Distrib/Save"/>
+       <script src="/assets/mysharedjs/exportExcel.js"></script>
+ <script src="/assets/mysharedjs/ExcelLikeTableEditing.js"></script>
+}
+ 

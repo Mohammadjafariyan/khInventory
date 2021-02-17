@@ -1,0 +1,8 @@
+﻿admin@admin.com
+@Mfjw154
+
+
+
+dotnet ef database update --context ProjectName.Data.ApplicationDbContext
+
+dotnet ef database update --context my_webapp.Model.KhInventoryDbContext

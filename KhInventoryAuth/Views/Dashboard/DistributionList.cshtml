@@ -1,0 +1,84 @@
+﻿@model object
+
+@inject SignalRMVCChat.Service.DistributionService  distributionService
+
+@{
+    var distributions = distributionService.GetQuery().ToList()
+        .OrderByDescending(o => o.Id).ToList();
+
+}
+<style>
+    /*input {
+    border:none;
+    padding:0px;
+    margin:0px;
+    }*/
+</style>
+
+                        
+                        @if (distributions.Count > 0)
+                        {
+                            <table class="table table-bordered  " id="mytable">
+                                <thead>
+                                <tr>
+                                    <th id="i">ردیف</th>
+                                    <th   id="Id" style="display: none">کد </th>
+                                    <th   id="MalCount" >تعداد دام </th>
+                                    
+                                    @*<th id="Etehadie">اتحادیه</th>
+                                    <th id="Taavoni">تعاونی</th>*@
+                                    <th id="Shahrestan">شهرستان</th>
+                                    <th id="NamVaNameKhanevadegi">نام و نام خانوادگی</th>
+                                    <th id="CodeMelli">کد ملی</th>
+                                    <th id="AddressVaNameRusta">آدرس / نام روستا</th>
+                                    <th id="Telephone">تماس</th>
+                                    @* <th id="HomeTelephone">تلفن</th> *@
+                                    <th id="ShomareOzviateTaavoni">شماره عضویت تعاونی</th>
+                                    @*
+                                    <th id="NoeFaaliat">نوع فعالیت</th>
+                                    *@
+                                    @*<th id="ZarfiatYaTedadeDamoTiur">ظرفیت (تعداد دام/طیور)</th>
+                                    <th id="NodeNahade" >نوع نهاده   </th>
+                                    <th id="MeqdareTahviliKG">مقدار تحویلی (KG)</th>
+                                    <th id="QeymateHarKGbeRIAL">قیمت هر کیلو (ریال)</th>
+                                    <th id="MaheSahmie">ماه سهمیه</th>*@
+                                </tr>
+                            
+                                </thead>
+                                <tbody>
+                                @{
+                                    int i = 0;
+                                }
+                                @foreach (var itm in distributions)
+                                {
+                                    i++;
+                                    <tr>
+
+                                        <td id="i">@i</td>
+                                        <td style="display: none    " id="Id">@itm.Id</td>
+                                        <td id="MalCount">@itm.MalCount</td>
+                                        @*<td id="Etehadie">@itm.Etehadie</td>
+                                        <td id="Taavoni">@itm.Taavoni</td>*@
+                                        <td id="Shahrestan"> @itm.Shahrestan</td>
+                                        <td id="NamVaNameKhanevadegi">@itm.NamVaNameKhanevadegi</td>
+                                        <td id="CodeMelli">@itm.CodeMelli</td>
+                                        <td id="AddressVaNameRusta">@itm.AddressVaNameRusta</td>
+                                        <td id="Telephone">@itm.Telephone</td>
+                                        @* <td id="HomeTelephone">@itm.HomeTelephone</td> *@
+                                        <td id="ShomareOzviateTaavoni">@itm.ShomareOzviateTaavoni</td>
+                                        @*<td id="NoeFaaliat">@itm.NoeFaaliat</td>
+                                        <td id="ZarfiatYaTedadeDamoTiur">@itm.ZarfiatYaTedadeDamoTiur</td>
+                                        <td id="NodeNahade">@itm.NodeNahade</td>
+                                        <td id="MeqdareTahviliKG">@itm.MeqdareTahviliKG</td>
+                                        <td id="QeymateHarKGbeRIAL">@itm.QeymateHarKGbeRIAL</td>
+                                        <td id="MaheSahmie">@itm.MaheSahmie</td>*@
+
+                                    </tr>
+
+
+                                }
+
+                                </tbody>
+                            </table>
+                        }
+                    

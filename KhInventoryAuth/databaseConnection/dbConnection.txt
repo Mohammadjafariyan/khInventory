@@ -1,0 +1,16 @@
+46.21.145.50.\MSSQLSERVER2017
+
+mjsoftir_kh-inventory
+
+
+mjsoftir_kh-inventory
+X5#k6rg9
+
+
+sql server 2012: 46.21.145.50
+sqlserver 2016: 46.21.145.50,1450
+sqlserver 2017: 46.21.145.50,64547
+
+
+username:admin@admin.com
+password :m12345678

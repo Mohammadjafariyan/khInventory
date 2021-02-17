@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <script data-pace-options='{ "ajax": true ,"restartOnRequestAfter":true}'
+            src="/assets/pace.js" ></script>
+
+        <script>
+          paceOptions = {
+            catchupTime: 100,
+            initialRate: .03,
+            minTime: 250,
+            ghostTime: 100,
+            maxProgressPerFrame: 20,
+            easeFactor: 1.25,
+            startOnPageLoad:true,
+            restartOnPushState:true,
+            restartOnRequestAfter: 500,
+            target:'body',
+            elements: {
+              checkInterval: 100,
+              selectors: ['body']
+            },
+            eventLag: {
+              minSamples: 10,
+              sampleCount: 3,
+              lagThreshold: 3
+            },
+            ajax: {
+              trackMethods: ['GET','POST','get','post'],
+              trackWebSockets:true,
+              ignoreURLs: []
+            }
+          }
+    
+        </script>
+
+    
+    <link href="/assets/pace.css"/>
+    <link rel="stylesheet" href="/assets/bootstrap.css"  >
+
+    <script
+        src="/assets/jquery.js"></script>
+    @*<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>*@
+    <script src="/assets/proper.js"  ></script>
+    <script src="/assets/bootstrap.js"  ></script>
+
+</head>
+<body>
+
+<style>
+    .btn{
+    
+    margin: 5px;
+    }
+</style>
+
+<div class="page-wrapper">
+    <!-- Page-header start -->
+    <!-- Page-header end -->
+
+    <!-- Page body start -->
+    <div class="page-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    @*@Html.Partial("SendSMSPartial")*@
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>@ViewBag.Title</h5>
+                            <a style="float: right" href="/"> داشبورد</a>
+                        </div>
+                        <div class="card-block">
+
+                            <hr/>
+
+                            <div class="row" style="padding: 30px">
+                                <div class="col-md-4 ">
+
+                                    <a href="/Dashboard/info" class="btn btn-primary">اطلاعات دامداران</a>
+                                    <a href="/Dashboard/Index" class="btn btn-primary">لیست توزیع</a>
+                                    <a href="/ConnectMalinfoToDistribution/Index" class="btn btn-primary">تصحیح و اتصال اطلاعات دامداران و توزیع</a>
+
+                                </div>
+                                <div class="col-md-4 ">
+                                </div>
+                                <div class="col-md-4 ">
+                                    <a target="_blank" href="/Dashboard/PrintDistribution" class="btn btn-primary">پرینت لیست توزیع</a>
+                                    <a target="_blank" href="/Dashboard/PrintMalInfo" class="btn btn-primary">پرینت اطلاعات دامداران</a>
+                                </div>
+                            </div>
+
+                            <hr/>
+
+                            <div class="row" style="padding: 30px">
+                                <a href="#" class="btn btn-primary" onclick="newRow(this,'mytable')">رکورد جدید</a>
+                                <a href="#" class="btn btn-primary" onclick="exportTableToExcel('mytable','@ViewBag.Title')">دریافت اکسل</a>
+                                <a href="#" class="btn btn-primary" onclick="tableToExcel('mytable','@ViewBag.Title')">Excel2</a>
+
+
+                            </div>
+                            <hr/>
+
+                            @RenderBody()
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@RenderSection("scripts", required: false)
+
+</body>
+</html>

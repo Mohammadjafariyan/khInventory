@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Mohammad\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\Mohammad\.Rider2019.3\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\Mohammad\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Mohammad\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_.19.00" t="ExcludeRecursive" />
-    <e p="E:\workplace\git\1399\4-tir\انبارداری_تعاونی\KHInventoryReact\my-webapp" t="IncludeRecursive">
+    <e p="C:\Users\padideh\AppData\local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\padideh\AppData\local\JetBrains\Rider2020.2\resharper-host\local\Transient\Rider\v202\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="C:\Users\padideh\AppData\Roaming\JetBrains\Rider2020.2\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\padideh\AppData\Roaming\JetBrains\Rider2020.2\extensions" t="IncludeRecursive" />
+    <e p="D:\Mohammad\workplace\1399\mehr\khInventory\KHInventoryReact\my-webapp" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
       <e p="appsettings.Development.json" t="Include" />
       <e p="appsettings.json" t="Include" />
@@ -44,84 +44,6 @@
           </e>
         </e>
         <e p="cypress.json" t="Include" />
-        <e p="node_modules\@babel\parser" t="IncludeRecursive" />
-        <e p="node_modules\@babel\types" t="IncludeRecursive" />
-        <e p="node_modules\@jest\console" t="IncludeRecursive" />
-        <e p="node_modules\@jest\fake-timers" t="IncludeRecursive" />
-        <e p="node_modules\@jest\source-map" t="IncludeRecursive" />
-        <e p="node_modules\@jest\test-result" t="IncludeRecursive" />
-        <e p="node_modules\@jest\types" t="IncludeRecursive" />
-        <e p="node_modules\@testing-library\dom" t="IncludeRecursive" />
-        <e p="node_modules\@testing-library\jest-dom" t="IncludeRecursive" />
-        <e p="node_modules\@testing-library\react" t="IncludeRecursive" />
-        <e p="node_modules\@types" t="IncludeRecursive">
-          <e p="babel__generator" t="IncludeRecursive" />
-          <e p="babel__template" t="IncludeRecursive" />
-          <e p="babel__traverse" t="IncludeRecursive" />
-          <e p="istanbul-lib-coverage" t="IncludeRecursive" />
-          <e p="istanbul-lib-report" t="IncludeRecursive" />
-          <e p="jest" t="IncludeRecursive" />
-          <e p="minimatch" t="IncludeRecursive" />
-          <e p="node" t="IncludeRecursive" />
-          <e p="yargs-parser" t="IncludeRecursive" />
-        </e>
-        <e p="node_modules\@typescript-eslint\experimental-utils" t="IncludeRecursive" />
-        <e p="node_modules\@typescript-eslint\parser" t="IncludeRecursive" />
-        <e p="node_modules\@typescript-eslint\typescript-estree" t="IncludeRecursive" />
-        <e p="node_modules\ajv" t="IncludeRecursive" />
-        <e p="node_modules\babel-eslint" t="IncludeRecursive" />
-        <e p="node_modules\babel-jest" t="IncludeRecursive" />
-        <e p="node_modules\bootstrap" t="IncludeRecursive" />
-        <e p="node_modules\chalk" t="IncludeRecursive" />
-        <e p="node_modules\check-more-types" t="IncludeRecursive" />
-        <e p="node_modules\cli-table3" t="IncludeRecursive" />
-        <e p="node_modules\commander" t="IncludeRecursive" />
-        <e p="node_modules\cross-env" t="IncludeRecursive" />
-        <e p="node_modules\cypress" t="IncludeRecursive" />
-        <e p="node_modules\diff-sequences" t="IncludeRecursive" />
-        <e p="node_modules\dotenv" t="IncludeRecursive" />
-        <e p="node_modules\dotenv-expand" t="IncludeRecursive" />
-        <e p="node_modules\enzyme" t="IncludeRecursive" />
-        <e p="node_modules\eslint" t="IncludeRecursive" />
-        <e p="node_modules\eslint-config-react-app" t="IncludeRecursive" />
-        <e p="node_modules\eslint-plugin-flowtype" t="IncludeRecursive" />
-        <e p="node_modules\eslint-plugin-import" t="IncludeRecursive" />
-        <e p="node_modules\eslint-plugin-jsx-a11y" t="IncludeRecursive" />
-        <e p="node_modules\eslint-plugin-react" t="IncludeRecursive" />
-        <e p="node_modules\eventemitter2" t="IncludeRecursive" />
-        <e p="node_modules\fast-deep-equal" t="IncludeRecursive" />
-        <e p="node_modules\fast-json-stable-stringify" t="IncludeRecursive" />
-        <e p="node_modules\html-webpack-plugin" t="IncludeRecursive" />
-        <e p="node_modules\jest" t="IncludeRecursive" />
-        <e p="node_modules\jest-diff" t="IncludeRecursive" />
-        <e p="node_modules\jest-get-type" t="IncludeRecursive" />
-        <e p="node_modules\jest-haste-map" t="IncludeRecursive" />
-        <e p="node_modules\jest-message-util" t="IncludeRecursive" />
-        <e p="node_modules\jest-mock" t="IncludeRecursive" />
-        <e p="node_modules\jest-resolve" t="IncludeRecursive" />
-        <e p="node_modules\jest-serializer" t="IncludeRecursive" />
-        <e p="node_modules\jest-util" t="IncludeRecursive" />
-        <e p="node_modules\jest-worker" t="IncludeRecursive" />
-        <e p="node_modules\jquery" t="IncludeRecursive" />
-        <e p="node_modules\lazy-ass" t="IncludeRecursive" />
-        <e p="node_modules\merge" t="IncludeRecursive" />
-        <e p="node_modules\moment" t="IncludeRecursive" />
-        <e p="node_modules\number-to-persian-text" t="IncludeRecursive" />
-        <e p="node_modules\oidc-client" t="IncludeRecursive" />
-        <e p="node_modules\pretty-error" t="IncludeRecursive" />
-        <e p="node_modules\pretty-format" t="IncludeRecursive" />
-        <e p="node_modules\react" t="IncludeRecursive" />
-        <e p="node_modules\react-dom" t="IncludeRecursive" />
-        <e p="node_modules\react-router-bootstrap" t="IncludeRecursive" />
-        <e p="node_modules\react-router-dom" t="IncludeRecursive" />
-        <e p="node_modules\react-scripts" t="IncludeRecursive" />
-        <e p="node_modules\react-select-event" t="IncludeRecursive" />
-        <e p="node_modules\reactstrap" t="IncludeRecursive" />
-        <e p="node_modules\realpath-native" t="IncludeRecursive" />
-        <e p="node_modules\rimraf" t="IncludeRecursive" />
-        <e p="node_modules\source-map" t="IncludeRecursive" />
-        <e p="node_modules\uri-js" t="IncludeRecursive" />
-        <e p="node_modules\worker-farm" t="IncludeRecursive" />
         <e p="package-lock.json" t="Include" />
         <e p="package.json" t="Include" />
         <e p="public" t="Include">
@@ -153,8 +75,6 @@
           <e p="components" t="Include">
             <e p="Counter.js" t="Include" />
             <e p="DynamicForm.js" t="Include" />
-            <e p="EasterEgg.js" t="Include" />
-            <e p="EggList.js" t="Include" />
             <e p="FetchData.js" t="Include" />
             <e p="GlobalCss.js" t="Include" />
             <e p="Home.js" t="Include" />
@@ -849,11 +769,6 @@
                 </e>
                 <e p="ace-editor" t="Include">
                   <e p="ace-editor-custom.js" t="Include" />
-                  <e p="build" t="Include">
-                    <e p="aui" t="Include">
-                      <e p="aui.js" t="Include" />
-                    </e>
-                  </e>
                 </e>
                 <e p="advance-elements" t="Include">
                   <e p="bootstrap-datetimepicker.min.js" t="Include" />
@@ -2171,56 +2086,7 @@
         <e p="SmsService.cs" t="Include" />
       </e>
       <e p="Startup.cs" t="Include" />
-      <e p="sysadmin" t="Include">
-        <e p="Controllers" t="Include">
-          <e p="GenericApiController.cs" t="Include" />
-          <e p="GenericController.cs" t="Include" />
-        </e>
-        <e p="DependencyInjection" t="Include">
-          <e p="Injector.cs" t="Include" />
-        </e>
-        <e p="MockDatabase" t="Include">
-          <e p="MockDb.cs" t="Include" />
-        </e>
-        <e p="Models" t="Include">
-          <e p="ErrorViewModel.cs" t="Include" />
-          <e p="MyDataTableResponse.cs" t="Include" />
-          <e p="MyEntityResponse.cs" t="Include" />
-          <e p="MyRelateEntityResponse.cs" t="Include" />
-        </e>
-        <e p="README.md" t="Include" />
-        <e p="Service" t="Include">
-          <e p="AccessProviderGenericService.cs" t="Include" />
-          <e p="BaseService.cs" t="Include" />
-          <e p="ContextFactory.cs" t="Include" />
-          <e p="EncryptionHelper.cs" t="Include" />
-          <e p="GenericImp.cs" t="Include" />
-          <e p="GenericService.cs" t="Include" />
-          <e p="GenericServiceSafeDelete.cs" t="Include" />
-          <e p="GenericServiceSafeDelete`1.cs" t="Include" />
-          <e p="GenericSingleImp.cs" t="Include" />
-          <e p="IService.cs" t="Include" />
-          <e p="MockImp.cs" t="Include" />
-          <e p="MyContextBase.cs" t="Include" />
-          <e p="MyGlobal.cs" t="Include" />
-          <e p="MyUtility.cs" t="Include" />
-          <e p="SelfReferenceEntity.cs" t="Include" />
-          <e p="SingleRecordBaseService.cs" t="Include" />
-        </e>
-        <e p="Views" t="Include">
-          <e p="AllTablesAsMenu" t="Include">
-            <e p="Index.cshtml" t="Include" />
-            <e p="TableIndex.cshtml" t="Include" />
-          </e>
-          <e p="Shared" t="Include">
-            <e p="_Admin_Layout.cshtml" t="Include" />
-            <e p="_Layout.cshtml" t="Include" />
-            <e p="AllTablesMenuIndex.cshtml" t="Include" />
-            <e p="pagingPartial.cshtml" t="Include" />
-          </e>
-          <e p="web.config" t="Include" />
-        </e>
-      </e>
+      <e p="sysadmin" t="Include" />
       <e p="test.sql" t="Include" />
       <e p="Views" t="Include">
         <e p="ConnectMalinfoToDistribution" t="Include">
